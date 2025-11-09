@@ -437,6 +437,8 @@ function renderAccounts(list){
       meta.appendChild(kEl); meta.appendChild(vEl);
     }
     row('enabled', String(!!acc.enabled));
+    row('success_count', acc.success_count ?? 0);
+    row('error_count', acc.error_count ?? 0);
     row('last_refresh_status', acc.last_refresh_status);
     row('last_refresh_time', acc.last_refresh_time);
     row('clientId', acc.clientId);
